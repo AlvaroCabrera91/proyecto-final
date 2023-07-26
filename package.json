@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "seedcomidas": "node ./src/seeds/comidas.seed.js"
+    "seedclass": "node ./src/seeds/course.seeds.js",
+    "seedcoachs": "node ./src/seeds/coachs.seeds.js",
+    "seedusers": "node ./src/seeds/users.seeds.js"
+
   },
   "keywords": [],
   "author": "",
