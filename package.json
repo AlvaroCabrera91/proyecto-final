@@ -9,7 +9,8 @@
     "dev": "nodemon index.js",
     "seedclass": "node ./src/seeds/course.seeds.js",
     "seedcoachs": "node ./src/seeds/coachs.seeds.js",
-    "seedusers": "node ./src/seeds/users.seeds.js"
+    "seedusers": "node ./src/seeds/users.seeds.js",
+    "jwt": "node ./src/utils/jwt.js"
 
   },
   "keywords": [],
