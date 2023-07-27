@@ -6,17 +6,21 @@ const coachsArray = [
     {
         name: "Alvaro",
         age: 32,
-        yearsOfExperiencie: 5
+        yearsOfExperiencie: 5,
+        courses: ["64c0f53c42bdfc4ee08a7948","64c0f53c42bdfc4ee08a7949"]
     },
     {
         name: "Adriana",
         age: 22,
-        yearsOfExperiencie: 9
+        yearsOfExperiencie: 9,
+        courses: ["64c0f53c42bdfc4ee08a7949","64c0f53c42bdfc4ee08a794a"]
     },
     {
         name: "Antonio",
         age: 42,
-        yearsOfExperiencie: 1
+        yearsOfExperiencie: 1,
+        courses: ["64c0f53c42bdfc4ee08a7948","64c0f53c42bdfc4ee08a794a"]
+
     },
   ];
 

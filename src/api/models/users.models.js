@@ -7,7 +7,8 @@ const usersSchema = new Schema({
     age: { type: Number, requires: true},
     email: { type: String, required: true },
     password: { type: String, required: true },
-    // courses: [{ type: ObjectId, required: true , ref: "class" }],
+    courses: [{ type: Schema.ObjectId, required: true , ref: "class" }],
+    role:{type:String, default:"user", enum:["coach","user","admin"]},
 },{
     collection: "users"
 }

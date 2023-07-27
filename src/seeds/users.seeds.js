@@ -5,11 +5,26 @@ const Users = require("../api/models/users.models");
 const usersArray = [
     {
         name: "Jose",
-        age: 50
+        age: 50,
+        email: "Jose@diseñador.com",
+        password: "Jose123",
+        courses: ["64c0f53c42bdfc4ee08a7948","64c0f53c42bdfc4ee08a7949"],
+        role: "admin"
     },
     {
         name: "Abel",
-        age: 30
+        age: 30,
+        email: "Abel@huelva.com",
+        password: "Abelino123",
+        courses: ["64c0f53c42bdfc4ee08a7948","64c0f53c42bdfc4ee08a794a"],
+        role: "user",
+    },{
+        name: "Dayana",
+        age: 29,
+        email: "Dayana@teacher.com",
+        password: "Dayana123",
+        courses: ["64c0f53c42bdfc4ee08a7948","64c0f53c42bdfc4ee08a7949"],
+        role: "coach"
     },
   ];
 

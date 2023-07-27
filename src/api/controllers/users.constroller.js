@@ -1,5 +1,6 @@
 const Users = require("../models/users.models")
 const bcrypt = require("bcrypt");
+
 const {generateSign} = require("../../utils/jwt")
 const {validateEmail,validatePassword,usedEmail} = require("../../utils/validators")
 
@@ -14,11 +15,11 @@ const getUsers = async (req, res) => {
 };
 
 
-
 const register = async (req, res ) => {
     try {
+        console.log(req.body);
         const newUser = new Users(req.body)
-        // console.log(req.body);
+        
         if (!validateEmail(newUser.email)) {
             return res.status(400).json({message:" email invalido"})
         }
@@ -58,4 +59,15 @@ const login = async (req, res) => {
         return res.status(500).json(error)
     }
 }
-module.exports={register,login,getUsers }
+
+const userProfile = async (req, res) => {
+    try {
+      return res.status(200).json(req.user);
+    } catch (error) {
+      return res.status(500).json(error);
+    }
+  };
+
+  
+
+module.exports={register,login,getUsers, userProfile }
